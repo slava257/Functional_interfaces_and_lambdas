@@ -1,14 +1,17 @@
 package Functional_interfaces_and_lambdas;
 
-public class House {
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public class House  {
     private final String address;
     private String floorNames;
     private int floor ;
 
     public House(String address, String floorNames, int floor) {
         this.address = address;
-        this.floorNames = floorNames;
         this.floor = floor;
+        this.floorNames=floorNames;
     }
 
     public String getAddress() {
@@ -39,4 +42,5 @@ public class House {
                 " наименования этажа " + floorNames + '\'' +
                 " этаж " + floor;
     }
+
 }
